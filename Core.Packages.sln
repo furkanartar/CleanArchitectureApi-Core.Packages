@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Persistence", "Core.Persistence\Core.Persistence.csproj", "{16C5E84C-1F8A-4605-BA23-50344029C3C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistence", "Core.Persistence\Core.Persistence.csproj", "{16C5E84C-1F8A-4605-BA23-50344029C3C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Application", "Core.Application\Core.Application.csproj", "{80F8B8C7-A796-456C-81F2-4080B44B67EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{16C5E84C-1F8A-4605-BA23-50344029C3C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16C5E84C-1F8A-4605-BA23-50344029C3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16C5E84C-1F8A-4605-BA23-50344029C3C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80F8B8C7-A796-456C-81F2-4080B44B67EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F8B8C7-A796-456C-81F2-4080B44B67EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F8B8C7-A796-456C-81F2-4080B44B67EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F8B8C7-A796-456C-81F2-4080B44B67EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
