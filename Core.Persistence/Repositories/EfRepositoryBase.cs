@@ -226,6 +226,20 @@ public class EfRepositoryBase<TEntity, TEntityId, TContext> : IAsyncRepository<T
             await SetEntityAsDeletedAsync(entity, permanent);
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+    //senkron repository'i gerek yok diye yazmadım...
+
     public TEntity? Get(Expression<Func<TEntity, bool>> predicate, Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? include = null, bool withDeleted = false, bool enableTracking = true, CancellationToken cancellationToken = default)
     {
         throw new NotImplementedException();
@@ -241,12 +255,6 @@ public class EfRepositoryBase<TEntity, TEntityId, TContext> : IAsyncRepository<T
         throw new NotImplementedException();
     }
 
-
-
-
-
-
-    //senkron repository'i gerek yok diye yazmadım...
     public bool Any(Expression<Func<TEntity, bool>>? predicate = null, bool withDeleted = false, bool enableTracking = true, CancellationToken cancellationToken = default)
     {
         throw new NotImplementedException();
