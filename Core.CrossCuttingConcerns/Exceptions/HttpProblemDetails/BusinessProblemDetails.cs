@@ -3,9 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Core.CrossCuttingConcerns.Exceptions.HttpProblemDetails;
 
-public class BusinessProblemDetails : ProblemDetails
+internal class BusinessProblemDetails : ProblemDetails
 {
     //.Net'te hali hazırda olan ProblemDetails'i implemente ediyoruz. Doğrudan ProblemDetails'i de kullanabiliriz ama ileride buraya ihtiyacımız olacak başka şeylerde eklemek isteyebiliriz.
+    //Neden direk ProblemDetails'ı dönmediğimizin sebebi ValidationProblemDetails içerisinde yer almakta
 
     public BusinessProblemDetails(string detail)
     {

@@ -19,6 +19,12 @@ public class HttpExceptionHandler : ExceptionHandler
         string details = new BusinessProblemDetails(businessException.Message).AsJson();
         return Response.WriteAsync(details);
     }
+    protected override Task HandleException(ValidationException validationException)
+    {
+        Response.StatusCode = StatusCodes.Status400BadRequest;
+        string details = new ValidationProblemDetails(validationException.Errors).AsJson();
+        return Response.WriteAsync(details);
+    }
 
     protected override Task HandleException(Exception exception) //internal server error, beklemediğimiz sistemsel bir sorun olursa burası çalışacak
     {

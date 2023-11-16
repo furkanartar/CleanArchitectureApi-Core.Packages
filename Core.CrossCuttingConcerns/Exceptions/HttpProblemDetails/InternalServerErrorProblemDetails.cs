@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Core.CrossCuttingConcerns.Exceptions.HttpProblemDetails;
 
-public class InternalServerErrorProblemDetails : ProblemDetails
+internal class InternalServerErrorProblemDetails : ProblemDetails
 {
     //.Net'te hali hazırda olan ProblemDetails'i implemente ediyoruz. Doğrudan ProblemDetails'i de kullanabiliriz ama ileride buraya ihtiyacımız olacak başka şeylerde eklemek isteyebiliriz. O yüzden Problem Details'i implemente ediyorum.
 

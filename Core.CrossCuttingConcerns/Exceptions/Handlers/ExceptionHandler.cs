@@ -9,9 +9,11 @@ public abstract class ExceptionHandler
         exception switch /* bu switch kullanımında tür üzerinden ayrım yapıyoruz.*/
         {
             BusinessException businessException => HandleException(businessException),//validation exception, authorization exception vs olabilir
+            ValidationException validationException => HandleException(validationException),
             _ => HandleException(exception)
         };
 
     protected abstract Task HandleException(BusinessException businessException); // gelen exception BusinessException ise burası çalışacak
+    protected abstract Task HandleException(ValidationException validationException);
     protected abstract Task HandleException(Exception exception); // gelen exception switch içerisinde hiç birisine uymaz ise burası çalışacak
 }
